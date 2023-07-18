@@ -4,10 +4,21 @@ body {
   font-weight: 700;
   width: 100vw;
   height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 span {
   margin: 10px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #content {
@@ -15,6 +26,7 @@ span {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 input,
@@ -42,17 +54,38 @@ input {
   margin: 20px;
 }
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    margin: 10px;
+  }
+
+  input,
+  button {
+    width: 70vw;
+    height: 15vh;
+    font-size: 64px;
+    padding-left: 20px;
+  }
+
+  #total {
+    font-size: 48px;
+    margin: 40px;
+  }
 }
 
-@media only screen and (min-width: 600px) {
-}
+/* @media only screen and (min-width: 600px) {
+} */
 
-@media only screen and (min-width: 768px) {
-}
+/* @media only screen and (min-width: 768px) {
+} */
 
-@media only screen and (min-width: 992px) {
-}
+/* @media only screen and (min-width: 992px) {
+} */
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
 } */
