@@ -70,7 +70,7 @@ button {
   opacity: 1;
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   input,
   button {
     height: 5vh;
@@ -89,7 +89,7 @@ button {
     font-size: 20px;
     margin: 20px;
   }
-}
+} */
 
 /* @media only screen and (min-width: 992px) {
 } */
