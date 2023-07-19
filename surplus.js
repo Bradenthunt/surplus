@@ -35,7 +35,7 @@ function calculateSurplus() {
 
   const surplus = availableAfterCredit - billsTotal;
 
-  chaChing();
+  chaChing(surplus);
 
   document.getElementById("total").innerText = `Your surplus is $${surplus}.`;
 }
