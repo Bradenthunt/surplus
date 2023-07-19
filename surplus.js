@@ -3,6 +3,17 @@ document.getElementById("form").addEventListener("submit", (e) => {
   calculateSurplus();
 });
 
+function chaChing(surplus) {
+  const kachingSound = new Audio("./kaching.mp3");
+  const wompSound = new Audio("./wompwomp.mp3");
+  const button = document.getElementById("button");
+
+  button.addEventListener("click", () => {
+    if (surplus > 0) kachingSound.play();
+    else wompSound.play();
+  });
+}
+
 function calculateSurplus() {
   const checking = document.getElementById("checking").value;
   const credit = document.getElementById("credit").value;
@@ -23,6 +34,8 @@ function calculateSurplus() {
   }
 
   const surplus = availableAfterCredit - billsTotal;
+
+  chaChing();
 
   document.getElementById("total").innerText = `Your surplus is $${surplus}.`;
 }
