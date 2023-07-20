@@ -29,6 +29,25 @@ function calculateSurplus() {
     billsTotal += checkingBills[bill];
   }
 
+  // Trying to play with this to make surplus dynamic
+  // const currentDay = new Date().getDate();
+  // if (currentDay > 1) {
+  //   billsTotal += checkingBills.mortgage;
+  //   billsTotal += checkingBills.autoInsurance;
+  // }
+  // if (currentDay > 5) {
+  //   billsTotal += checkingBills.electricity;
+  // }
+  // if (currentDay > 6) {
+  //   billsTotal += checkingBills.gas;
+  // }
+  // if (currentDay > 10) {
+  //   billsTotal += checkingBills.carPayment;
+  // }
+  // if (currentDay > 13) {
+  //   billsTotal += checkingBills.solarPayment;
+  // }
+
   const surplus = availableAfterCredit - billsTotal;
 
   chaChing(surplus);
